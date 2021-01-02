@@ -1,0 +1,9 @@
+/* pages/coderinfo/help.wxss */
+.t1{
+  color: red;
+}
+
+text{
+  display: block;
+  margin: 10px;
+}

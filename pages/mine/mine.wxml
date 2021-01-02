@@ -1,0 +1,83 @@
+<scroll-view scroll-y class="sv">
+  <view>
+    <!-- <view class="container">
+      <view class="search-flex">
+        <input type="type" maxlength="12" placeholder="搜索物品"></input>
+      </view>
+    </view> -->
+    <view class="swiper-tab">
+      <view class="swiper-tabl-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">
+        卡片证件
+      </view>
+      <view class="swiper-tabl-list {{currentTab==0 ? 'on' : ''}}" data-current="1" bindtap="swichNav">
+        电子产品
+      </view>
+      <view class="swiper-tabl-list {{currentTab==0 ? 'on' : ''}}" data-current="2" bindtap="swichNav">
+        包
+      </view>
+      <view class="swiper-tabl-list {{currentTab==0 ? 'on' : ''}}" data-current="3" bindtap="swichNav">
+        其他
+      </view>
+    </view>
+
+
+    <view>
+    <!-- style="height:{{winHeight - 31}}px" -->
+      <swiper current="{{currentTab}}" class="swiper-box" style="height:{{winHeight - 31}}px" duration="300"  bindchange="bindChange">
+        <swiper-item>
+          <view wx:for="{{card}}" wx:key="_id">
+            <navigator url="../detailrelease/detail?id={{item._id}}">
+            <view class="t1">
+              <image src="{{item.imgurl}}" mode="aspectFill" class="image1"></image>
+            </view>
+            <view class="t2">
+              <label >{{item.name}}</label>
+              <label >{{item.describe}}</label>
+              <label >发布者：{{item.username}}</label>
+              <!-- <label class="label">{{item.phoneNumber}}</label>
+              <label class="label">{{item.weichatNumber}}</label> -->
+            </view>
+            </navigator>
+          </view>
+        </swiper-item>
+
+        <swiper-item>
+
+          <view wx:for="{{ele}}" wx:key="_id" class="css1">
+            <navigator url="../detailrelease/detail1?id={{item._id}}">
+            <image src="{{item.imgurl}}" mode="aspectFill" class="image1"></image>
+            <label >{{item.name}}</label>
+            <label >{{item.describe}}</label>
+             <label >发布者：{{item.username}}</label>
+            </navigator>
+          </view>
+
+        </swiper-item>
+
+        <swiper-item>
+
+          <view wx:for="{{bag}}" wx:key="_id">
+            <navigator url="../detailrelease/detail2?id={{item._id}}">
+            <image src="{{item.imgurl}}" mode="aspectFill" class="image1"></image>
+            <label >{{item.name}}</label>
+            <label >{{item.describe}}</label>
+             <label >发布者：{{item.username}}</label>
+            </navigator>
+          </view>
+        </swiper-item>
+
+        <swiper-item>
+
+          <view wx:for="{{product}}" wx:key="_id">
+            <navigator url="../detailrelease/detail3?id={{item._id}}">
+            <image src="{{item.imgurl}}" mode="aspectFill" class="image1"></image>
+            <label>{{item.name}}</label>
+            <label >{{item.describe}}</label>
+             <label >发布者：{{item.username}}</label>
+            </navigator>
+          </view>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+</scroll-view>

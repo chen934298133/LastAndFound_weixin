@@ -1,0 +1,27 @@
+/* pages/detailrelease/detail.wxss */
+.image {
+  width: 400rpx;
+  height: 400rpx;
+  /* border-radius: 50%; */
+  margin-left: 5%;
+  margin-top: 20rpx;
+  display: block;
+}
+
+text{
+  /* display: block; */
+  margin: 10px;
+}
+
+label{
+  /* display: block; */
+  margin-left: 10px;
+}
+
+button{
+  margin-top: 10px;
+}
+
+.fen{
+  margin: 5px
+}

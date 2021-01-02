@@ -1,0 +1,57 @@
+/*样式设计*/
+
+/* .container{
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; 
+} */
+
+.container {
+  align-items: center;
+}
+
+.image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  margin-left: 5%;
+  margin-top: 20rpx;
+}
+
+.t1{
+  width: 100%;
+  height: 250rpx;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.t1 text{
+  margin-left: 30rpx;
+}
+/* .imagee{
+  width: 80%;
+  height: 150rpx;
+} */
+
+text {
+  font-size: 40rpx;
+  color: #000000;
+  /* #00FFFF */
+}
+
+.button {
+  background-color: #13227a;
+  color: #f8f8ff;
+  size: default;
+  width: 300rpx;
+  /* height: 100rpx; */
+  margin-left: 10rpx;
+}
+
+.button1 {
+  /* padding-top: 100rpx; */
+  margin-top: 10%;
+}
