@@ -1,0 +1,37 @@
+<!--pages/release/release.wxml-->
+<!-- <text>pages/release/release.wxml</text> -->
+<!-- <button>发布物品</button> -->
+<view ><image  class="image" mode="scaleToFill" src="/images/123.jpg" ></image></view>
+<view class="container" >
+
+  <view class="nav-item">
+  <!-- wx:if="{{logged}}" -->
+  <text wx:if="{{!logged}}" bindtap="login"> 请先登陆！</text>
+  <navigator wx:else url="/pages/detailrelease/detailrelease">
+  <!-- <navigator wx:else url="/pages/detailrelease/detailrelease"> -->
+  <image  mode="aspectFill" src="/images/fabu.png" class="images"></image>
+  <text class="ttttt">发布物品</text>
+  </navigator>
+  </view>
+
+   <!-- <view class="nav-item">
+   <text wx:if="{{!logged}}" bindtap="login"> 请先登陆！</text>
+   <navigator wx:else url="/pages/detailrelea se/detaillose">
+  <image  mode="aspectFill" src="/images/diushi.png" class="images"></image>
+  <text>待开发</text>
+  </navigator>
+  </view>
+
+ <view class="nav-item">
+ <text wx:if="{{!logged}}" bindtap="login"> 请先登陆！</text>
+  <navigator wx:else>
+  <image  mode="aspectFill" src="/images/xiugai.png" class="images"></image>
+  <text>待开发</text>
+  </navigator>
+  </view> -->
+
+</view>
+
+<!-- <button bindtap="addData">捡到物品</button> -->
+
+ 

@@ -1,0 +1,16 @@
+<view class="t1">
+
+<text >姓名:</text>
+<input type="text" value="{{name}}" bindinput="handlename" />
+
+<text >手机:</text>
+<input placeholder="请输入手机号" type="text" value="{{phoneNumber}}" bindinput="handlephone" />
+
+<text>微信号:</text>
+<input placeholder="请输入微信号" type="text" value="{{weichatNumber}}" bindinput="handleweichat"/>
+
+<navigator url="/pages/index/index" open-type = "switchTab">
+<button bindtap="handleall">完善我的信息</button>
+</navigator>
+
+</view>

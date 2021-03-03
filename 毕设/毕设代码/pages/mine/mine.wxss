@@ -1,0 +1,88 @@
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.search-flex {
+  display: flex;
+  padding: 10rpx;
+  border-bottom: 1rpx solid gray;
+  position: relative;
+  z-index: 13;
+  background: #eee;
+  transition: all 0.3s;
+  border-radius: 15rpx;
+}
+
+.filter-tab {
+  display: flex;
+  width: 100%;
+  line-height: 70rpx;
+}
+
+label{
+  margin: 10px;
+  display: block;
+}
+
+.swiper-tab {
+  width: 100%;
+  border-bottom: 1rpx solid darkslategrey;
+  text-align: center;
+  line-height: 70rpx;
+}
+
+.swiper-tabl-list {
+  display: inline-block;
+  width: 25%;
+  color: darkblue;
+}
+
+.on {
+  border-bottom: 5rpx solid darkgreen;
+}
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+.view {
+  margin-bottom: 20rpx;
+}
+
+.image1 {
+  height: 200rpx;
+  width: 200rpx;
+  /* float: left; */
+}
+
+.label {
+  /* margin-left: 20rpx; */
+  /* display: inline; */
+  /* float: right; */
+}
+
+.t1 {
+  width: 25%;
+}
+
+.t2 {
+  width: 75%;
+}
+
+/* 
+.sv{
+  width: 100%;
+  height: 500rpx;
+  background-color: #c7c7c7;
+} */
+
+/* swiper-item {
+  overflow: scroll;
+} */
+

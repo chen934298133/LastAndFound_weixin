@@ -1,0 +1,10 @@
+<view class="container">
+  <image src='{{src}}' class="image" mode="aspectFill"></image>
+  <!-- <image src='/images/456.png' mode="scaleToFill" class="imagee"></image> -->
+
+  <button open-type="getUserInfo" bindgetuserinfo="getMyInfo" class="button" >微信登录 </button>
+  <navigator url="/pages/index/index" open-type = "switchTab">
+  <button class="button" bindtap="buttonListener" >完成</button>
+  </navigator> 
+
+</view>

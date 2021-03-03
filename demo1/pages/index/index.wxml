@@ -1,0 +1,29 @@
+<view class="container">
+  <!-- <navigator url="/pages/index/register"> -->
+    <view class="t1" >
+        <image src='{{src}}' class="image" mode="aspectFill"></image>
+        <text wx:if="{{logged}}">{{name}}</text>
+      <button wx:else open-type="getUserInfo" bindgetuserinfo="getMyInfo" class="button">登录/注册 ></button>
+    </view>
+  <!-- </navigator> -->
+
+  <view class="container">
+   
+    <navigator url="/pages/detailrelease/detailuserinfo" open-type="navigate">
+     <button class="button1" wx:if="{{logged}}">查看我的信息</button>
+       <button wx:if="{{logged}}" >修改我的信息</button>
+    </navigator>
+    
+ <navigator url="/pages/coderinfo/help">
+    <button>帮助</button>
+ </navigator>
+
+  <navigator url="/pages/coderinfo/about">
+ <button>关于</button>
+ </navigator>
+  </view>
+
+  <view>
+  <button bindtap="back" wx:if="{{logged}}">退出登录</button>
+  </view>
+</view>

@@ -1,0 +1,30 @@
+<form bindsubmit="onSumbit">
+<!-- <view class="filter-tab">
+    <picker range="{{array}}">
+    <text>卡片类</text> 
+    </picker>
+  </view> -->
+
+  <view class="content">
+    <view class="t1"><text class="ttt">* 选择类别</text></view>
+      <picker bindchange="bindPickerChange" value="{{index1}}" range="{{array}}" class="select"> <view class="t2"> {{array[index1]}}</view></picker>
+  </view>
+  <input name="name"  placeholder="请输入丢失物品信息……" class="input"></input>
+  <textarea class="detailText" placeholder="请输入发布时间及详细信息……" name="describe" class="input1"></textarea>
+
+  <image src="{{imgurl}}" class="image" mode="aspectFill"></image>
+  <button form-type="submit" bindtap="upload" class="up">上传图片</button>
+  <view >
+  <text name="username">发布者：{{username}}</text>
+  <!-- <input name="username" type="text" value="{{username}}"  /> -->
+  <text >手机号：{{phoneNumber}}</text>
+  <text >微信号：{{weichatNumber}}</text>
+  </view>
+<view>
+  <navigator url="/pages/mine/mine" open-type = "switchTab">
+  <!-- <text>111111111</text> -->
+  <button class="up" hover-class="plain-hover">完成</button>
+  </navigator>
+</view>
+</form>
+

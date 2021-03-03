@@ -1,0 +1,13 @@
+/* pages/detailrelease/detailuserinfo.wxss */
+input{
+  border: 1px #b4b5b6 solid;
+  margin-top: 10px;
+}
+
+button{
+  margin-top: 50px;
+}
+
+.t1{
+  margin-top: 200px;
+}

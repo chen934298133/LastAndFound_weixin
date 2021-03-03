@@ -1,0 +1,31 @@
+<view class="fen">
+<text> 物品图片：</text> <image src='{{product.imgurl}}' class="image" mode="aspectFill"></image>
+</view>
+
+<view class="fen">
+<text> 物品名称:</text> <label>{{product.name}}</label>
+</view>
+
+<view class="fen">
+<text> 物品描述:</text><label>{{product.describe}}</label>
+</view>
+
+<view class="fen">
+<text> 发布者:</text><label class="label">{{product.username}}</label>
+</view>
+
+<view class="detail-item" class="fen">
+<text> 发布者手机号码:</text><label class="label">{{product.phoneNumber}}</label>
+<call-phone phoneNumber="{{product.phoneNumber}}" />
+</view>
+
+<view class="detail-item" class="fen">
+<text> 发布者微信号码:</text><label class="label">{{product.weichatNumber}}</label>
+<copy-text copyText="{{product.weichatNumber}}"/>
+</view>
+
+  <navigator url="/pages/mine/mine" open-type = "switchTab">
+<button wx:if="{{own}}" bindtap="delect">招领该物品</button>
+
+</navigator>
+ 

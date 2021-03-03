@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/mine/mine",
+    "pages/release/release",
+    "pages/index/index",
+    "pages/detailrelease/detailrelease",
+    "pages/detailrelease/detaillose",
+    "pages/List/card/card",
+    "pages/List/cardz/cardz",
+    "pages/List/packet/packet",
+    "pages/detailrelease/detail",
+    "pages/index/register",
+    "pages/detailrelease/detailuserinfo",
+    "pages/detailrelease/detail2",
+    "pages/detailrelease/detail1",
+    "pages/detailrelease/detail3",
+    "pages/coderinfo/help",
+    "pages/coderinfo/about"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "丢丢妹",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "发现",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/_home.png"
+      },
+      {
+        "pagePath": "pages/release/release",
+        "text": "发布",
+        "iconPath": "images/release.png",
+        "selectedIconPath": "images/_release.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/_mine.png"
+      }
+    ],
+    "color": "#515151",
+    "selectedColor": "#1296db"
+  },
+  "sitemapLocation": "sitemap.json"
+}

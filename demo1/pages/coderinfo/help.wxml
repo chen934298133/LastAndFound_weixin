@@ -1,0 +1,9 @@
+<!--pages/coderinfo/help.wxml-->
+<!-- <text>pages/coderinfo/help.wxml</text> -->
+<view>
+<text>一些小技巧：</text>
+<text class="t1">建议用户完善自己的信息，便于发布信息以及后续招领操作的完整性。</text>
+<text>每个tabBar页面如遇数据更新与实际数据不匹配，皆可以实现下拉刷新操作。</text>
+<text>本程序实现已登录用户保存用户信息，用户在下次登陆时可以免去登陆的流程，希望给予用户人机交互的友善感。</text>
+<text>待补充……</text>
+</view>

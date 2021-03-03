@@ -1,0 +1,9 @@
+<!--pages/coderinfo/about.wxml-->
+<!-- <text>pages/coderinfo/about.wxml</text> -->
+<view>
+<text>开发者信息：陈同学</text>
+<text>开发者QQ：932498133</text>
+<text>开发者微信：chen934298133</text>
+<text>开发者微信公众号：不理想程序</text>
+<text>使用中若有建议或者新的bug欢迎联系我哦！</text>
+</view>

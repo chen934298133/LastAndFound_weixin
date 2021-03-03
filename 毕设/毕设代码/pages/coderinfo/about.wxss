@@ -1,0 +1,5 @@
+/* pages/coderinfo/about.wxss */
+text{
+  display: block;
+  margin: 10px;
+}

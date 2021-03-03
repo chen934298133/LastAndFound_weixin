@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "call-phone": "../components/callphone/callphone",
+    "copy-text": "../components/copyText/copyText"
+  },
+  "enablePullDownRefresh": true
+}
